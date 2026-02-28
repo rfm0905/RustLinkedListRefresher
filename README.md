@@ -6,7 +6,7 @@
 Contains: 
 1. [`bad_stack.rs`](src/bad_stack.rs) A very basic stack 
 2. [`ok_stack.rs`](src/ok_stack.rs) A normal stack that upgrades the previous one with `std::option`, and iterators 
-3. [`peristent_stack.rs`](src/peristent_stack.rs) An FP-style stack which is immutable. Uses reference-counted `std::Rc`, though I modified for thread-safety with `std::Arc` 
+3. [`peristent_stack.rs`](src/persistent_stack.rs) An FP-style stack which is immutable. Uses reference-counted `std::Rc`, though I modified for thread-safety with `std::Arc` 
 4. [`bad_safe_deque.rs`](src/bad_safe_deque.rs) A deque that uses no unsafe code, but via `std::RefCell` has interior mutability. 
 5. [`ok_unsafe_queue.rs`](src/ok_unsafe_queue.rs) A queue that finally gets into unsafe pointers and `unsafe` Rust. 
 6. [`linkedlist.rs`](src/linkedlist.rs), One-to-one equivalent of `std::LinkedList`, but also with cursors (and iterators). Kinda got lazy copy pasting on this one since I wasn't really learning anything new
